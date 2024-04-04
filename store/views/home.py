@@ -38,6 +38,7 @@ class Index(View):
 
 
 def store(request):
+	# store view
 	cart = request.session.get('cart')
 	if not cart:
 		request.session['cart'] = {}
